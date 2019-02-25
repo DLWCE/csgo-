@@ -1,0 +1,300 @@
+body {
+    background-color: #0b0d10;
+}
+
+.infoMain {
+    margin-top: 100px;
+    position: relative;
+    height: 822px;
+}
+
+.infoNav {
+
+    height: 520px;
+    /*float: left;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #333;
+}
+
+.infoNav a {
+
+    display: block;
+    width: 199px;
+    height: 64px;
+    font-size: 16px;
+    line-height: 64px;
+    color: white;
+
+}
+
+.infoNav a i {
+
+    float: left;
+    width: 33px;
+    height: 28px;
+    background: url('../Infoimages/common/icon.png');
+    margin: 18px 25px 0 42px;
+}
+
+.infoNav .tag02 {
+    background-position: 3px -64px;
+}
+.infoNav .tag03 {
+    background-position-y: -130px;
+}
+.infoNav .tag04 {
+    background-position-y: -194px;
+}
+.infoNav .tag05 {
+    height: 36px;
+    background-position-y: -256px;
+}
+.infoNav .tag06 {
+    background-position-y: -322px;
+}
+.infoNav .tag07 {
+    background-position-y: -450px;
+}
+.infoNav .tag08 {
+    height: 30px;
+    background-position-y: -386px;
+}
+
+/*点击变色*/
+.infoNav .title_selected {
+    background-color: darkgoldenrod;
+}
+
+.infoMain .infoContent {
+
+    /*float: left;*/
+    position: absolute;
+    top: 0;
+    left: 199px;
+}
+
+.infoMain .info_con {
+
+    width: 1001px;
+    height: 822px;
+    overflow: hidden;
+}
+
+.infoMain .info_title {
+
+    width: 253px;
+    height: 70px;
+    margin: 41px 0 0 77px;
+}
+
+/*背景图片*/
+.history {
+    background: no-repeat center top url('../Infoimages/gameHistory/bg_history.jpg');
+}
+.newSoldierCon {
+    background:no-repeat center top url('../Infoimages/newPreson/bg_recruit.jpg');
+}
+.playCon {
+    background:no-repeat center top url('../Infoimages/play/bg_example.jpg');
+}
+.weaponCon {
+    background:no-repeat center top url('../Infoimages/weapon/bg_arms.jpg');
+}
+.suitCon {
+    background:no-repeat center top url('../Infoimages/equipment/bg_equipment.jpg');
+}
+.mapCon {
+    background:no-repeat center top url('../Infoimages/map/bg_map.jpg');
+}
+.friendsCon {
+    background:no-repeat center top url('../Infoimages/friends/bg_friends.jpg');
+}
+.othersCon {
+    background:no-repeat center top url('../Infoimages/others/bg_others.jpg');
+}
+/*背景标题*/
+.h_title {
+    background-image: url('../Infoimages/gameHistory/title_background.png');
+}
+.infoMain .info_con .new_title {
+    background-image: url('../Infoimages/newPreson/title_recruit.png');
+    width: 222px;
+    height: 67px;
+}
+.infoMain .info_con .p_title {
+    background-image: url('../Infoimages/play/title_example.png');
+    width: 250px;
+    height: 68px;
+}
+.infoMain .info_con .w_title {
+    background-image: url('../Infoimages/weapon/title_arms.png');
+    width: 248px;
+    height: 70px;
+}
+.infoMain .info_con .s_title {
+    background-image: url('../Infoimages/equipment/title_equipment.png');
+    width: 248px;
+    height: 84px;
+}
+.infoMain .info_con .m_title {
+    background-image: url('../Infoimages/map/title_map.png');
+    width: 248px;
+    height: 84px;
+}
+.infoMain .info_con .f_title {
+    background-image: url('../Infoimages/friends/title_friends.png');
+    width: 250px;
+    height: 64px;
+}
+.infoMain .info_con .o_title {
+    background-image: url('../Infoimages/others/title_others.png');
+    width: 256px;
+    height: 82px;
+}
+
+/*
+游戏背景详情
+*/
+.details {
+
+    width: 919px;
+    margin: 27px 0 0 82px;
+    overflow: hidden;
+}
+.details .scrollView {
+
+    margin-top: 20px;
+    padding-right: 10px;
+    position: relative;
+}
+
+.textPic_model p {
+    text-indent: 2em;
+    font-size: 14px;
+    color: #e1eaf1;
+}
+
+.textPic_model a {
+    display: block;
+    width: 725px;
+    padding: 10px 92px;
+}
+
+/*新兵报到 详情*/
+/*标题*/
+.details ul {
+    overflow: hidden;
+}
+.details .details_li{
+
+    float: left;
+    width: 110px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    margin-right: 1px;
+    background-color: #3a404c;
+}
+
+/* 玩法模式  开始 */
+
+/* 玩法模式的导航栏 开始 */
+.yj_liLsit li {
+    float: left;
+    width: 110px;
+    height: 30px;
+    background-color: #3a404c;
+    margin-right: 1px ;
+    text-align: center;
+}
+.yj_liLsit li a {
+    color: #e1eaf1;
+    line-height: 30px;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+/* 玩法模式的导航栏 结束 */
+/* 显示区域  开始 */
+.yj_display {
+    width: 917px;
+    height: 575px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.yj_play_classify li{
+    float: left;
+    margin-right: 5px;
+}
+/* 显示区域  结束 */
+
+.yj_cancel {
+    /* margin-left: 596px; */
+    position: absolute;
+    right: 0;
+}
+.yj_box_tiny {
+    position: fixed;
+    left: 280px;
+    top: 100px;
+    background-color:rgb(0, 0, 0);
+
+}
+.yj_text {
+    color: #e1eaf1;
+    padding: 36px;
+}
+.yj_text_b {
+    line-height: 15px;
+    margin-top: 30px;
+}
+.yj_text_c {
+    line-height: 40px;
+}
+.yj_text_d{
+    line-height: 15px;
+}
+.yj_imge {
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+/* 玩法模式  结束 */
+
+/* 武器中心模块*/
+.weaponCon .details .gun_scroll {
+
+    margin-top: 0;
+}
+
+/*  地图中心*/
+.mapCon .info_con .details_li {
+    width: 134px;
+}
+
+.mapCon .m_detail .maps p {
+
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 752px;
+    padding: 0 2%;
+    height: 38px;
+    font-size: 14px;
+    line-height: 38px;
+    text-indent: 2em;
+    background: rgba(0,0,0,0.8);
+    color: #CCC;
+}
+
+.mapCon .m_detail .maps a {
+    float: right;
+    color: #b5d5f1;
+    text-decoration: underline;
+
+}

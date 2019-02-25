@@ -1,0 +1,104 @@
+﻿
+
+/*头部*/
+
+.navbox-bg {
+    background: #111521;
+    width: 100%;
+    z-index: 999;
+
+}
+
+.navbox-bg .navbox {
+    display: flex;
+    height: 80px;
+    width: 1200px;
+    justify-content: space-between;
+    margin:  0 auto;
+    align-items: center;
+
+}
+
+.navbox-bg .navbox a {
+    color: #fff;
+}
+
+.navbox .logo a {
+    height: 64px;
+    display: flex;
+}
+.navbox .logo img {
+    height:100%;
+}
+
+.navbox .nav {
+    display: flex;
+    flex: 1;
+    margin-left: 140px;
+    align-self: flex-end;
+}
+
+.navbox .nav a {
+    margin:  0 25px;
+    height: 60px;
+    box-sizing: border-box;
+}
+
+.navbox .nav a h4 {
+    font-size: 16px;
+}
+.navbox .nav a p {
+    font-size: 12px;
+}
+
+
+.navbox .nav a:hover {
+    border-bottom: 3px solid #566e95;
+}
+
+.navbox .log {
+    color: #fff;
+    font-size: 14px;
+}
+
+.navbox .log a {
+    color:#566e95;
+
+}
+
+/*底部*/
+
+.footer-bg {
+    background-color: #000;
+}
+.footer-bg .footer {
+    display: flex;
+    height: 160px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .footer-top {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.footer .footer-top .footer-img-margin {
+    margin: 0 10px;
+}
+.footer .footer-top p {
+    color: #959595;
+}
+
+.footer .footer-bottom {
+    color: #555;
+}
+
+.footer .footer-bottom a {
+    color: #53bdfa;
+}
+
+.footer .footer-bottom p {
+    text-align: center;
+}

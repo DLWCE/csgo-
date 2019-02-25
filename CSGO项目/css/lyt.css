@@ -1,0 +1,171 @@
+/*初始化代码开始*/
+
+/*清除元素默认的内外边距  */
+* {
+    margin: 0;
+    padding: 0
+}
+/*让所有斜体 不倾斜*/
+em,
+i {
+    font-style: normal;
+}
+/*去掉列表前面的小点*/
+li {
+    list-style: none;
+}
+/*图片没有边框   去掉图片底侧的空白缝隙*/
+img {
+    border: 0;  /*ie6*/
+    vertical-align: middle;
+}
+/*让button 按钮 变成小手*/
+button {
+    cursor: pointer;
+}
+/*取消链接的下划线*/
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e33333;
+}
+
+button,
+input {
+    font-family: 'Microsoft YaHei', 'Heiti SC', tahoma, arial, 'Hiragino Sans GB', \\5B8B\4F53, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    font: 12px/1.5 'Microsoft YaHei', 'Heiti SC', tahoma, arial, 'Hiragino Sans GB', \\5B8B\4F53, sans-serif;
+    color: #666
+}
+
+.hide,
+.none {
+    display: none;
+}
+/*清除浮动*/
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+
+.clearfix {
+    *zoom: 1
+}
+/*初始化代码结束*/
+
+/*top*/
+.top{
+    /*width: 1920px;*/
+    height: 1000px;
+    background: url('../img/5032aae6aac53034bdd2e13567b506d81538209495.jpg') no-repeat top;
+    position: relative;
+}
+.top_nav{
+    position: absolute;
+    margin-top: 670px;
+    left: 50%;
+    margin-left: -500px;
+}
+.top_nav_none {
+    position: absolute;
+    margin-top: 650px ;
+    left: 50%;
+    margin-left: -500px;
+}
+
+.top_nav li{
+    float: left;
+    height: 103px;
+    width: 329px;
+    background-image: url('../img/sprite_d80bda99.png');
+    margin-right: 45px;
+}
+
+.top_nav .jlt1{
+    background-position: -335px -218px;
+}
+
+.top_nav .jlt2{
+    background-position: -1px -110px;
+}
+.top_nav .jlt3 {
+    background-position: -334px -1px;
+}
+
+.top_nav .jlt1:hover {
+    background-position: -1px 0;
+}
+
+.top_nav .jlt2:hover {
+    background-position: -1px -218px;
+}
+
+.top_nav .jlt3:hover {
+    background-position: -334px -110px;
+}
+
+.down{
+   overflow: hidden;
+    /*height: 1000px;*/
+    background: url("../img/bg_list_ffb8125a.png") repeat;
+}
+.down .tit{
+
+    margin-top: 50px;
+    text-align: center;
+    font-size: 36px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.down .nav{
+    width: 900px;
+    height: 38px;
+    margin: 0 auto;
+    top: 30px;
+
+}
+
+.down .nav a{
+    float: left;
+    display: table-cell;
+    width: 180px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 18px;
+    background-color:rgba(0,0,0,.5);
+}
+.down .nav a:hover{
+    background-color:rgb(255,255,255);
+}
+
+.inner{
+    width: 1500px;
+    /*height: 1000px;*/
+    margin-top: 50px;
+    margin-left: 300px;
+}
+
+
+.products li{
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 100px;
+}
+.products .main.selected{
+    display: block;
+}
+.products .main{
+    display: none;
+}
+

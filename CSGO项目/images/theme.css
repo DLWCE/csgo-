@@ -1,0 +1,22 @@
+.csgo-side-float {
+    position: fixed;
+    right: 0;
+    top: 20%;
+    z-index: 100;
+}
+
+.csgo-side-float a.lnk-img {
+    width: 133px;
+    height: 345px;
+    display: block;
+}
+
+.csgo-side-float a.lnk-close {
+    width: 18px;
+    height: 18px;
+    display: block;
+    background: url(/csgo2018/images/img-close18.png) no-repeat 0 0;
+    position: absolute;
+    left: -22px;
+    top: 0
+}

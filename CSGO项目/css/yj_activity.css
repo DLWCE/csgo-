@@ -1,0 +1,206 @@
+/* 初始化代码,单独文件 */
+
+body,
+div,
+span,
+p,
+a,
+input,
+img,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+strong,
+em,
+del,
+ins,
+i,
+dl,
+dt,
+dd,
+h5 {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: normal;
+}
+
+i {
+    font-style: normal;
+}
+
+body {
+    font: 14px/100% "幼园";
+   background-color:#fff;
+}
+
+.clearfix::after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+.w {
+    width: 1224px;
+    margin: 0 auto;
+    /* 1232 */
+}
+
+/* 初始化代码结束 */
+
+/* 页面最大背景图片  开始*/
+.yj_bgi {
+    background-image: url(../image/bg_action.jpg);
+    background-position:center  0;
+    background-repeat: no-repeat;
+}
+/* <!-- 活动中心 图片 开始 --> */
+.yj_activity {
+    width: 1232px;
+    height: 111px;
+    margin: 0 auto;
+    padding-top: 240px;
+}
+/* <!-- 活动中心 图片 结束 --> */
+/* 活动详情 以及图片 开始 */
+.yj_news_box {
+    margin-top: 120px;
+}
+.yj_details {
+    width: 874px;
+    float: left;
+    background-color: #fff;
+}
+/* 活动中心详情 板块 顶部文字 开始 */
+.yj_site {
+    height: 69px;
+    padding-left: 40px;
+    border-bottom: 1px solid #d9d9d9;
+
+}
+.yj_site li{
+    float: left;
+    line-height: 69px;
+}
+/* 活动中心详情 板块 顶部文字  结束 */
+/* <!-- 图片列表详情开始 --> */
+.yj_picture_ {
+    margin-top: 40px;
+    padding-left: 50px;
+}
+.yj_picture_ li {
+    float: left;
+    width: 246px;
+    height: 386px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+
+}
+.yj_text {
+    padding-left: 20px;
+    border: 1px solid #d9d9d9 ; 
+    border-top: none;
+    height: 229px;
+}
+.yj_text_a {
+    color: #526b94;
+    font-size: 16px;
+    line-height: 55px;
+}
+.yj_time {
+    color: #555555;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+.yj_text_b {
+    color: #666666;
+    height: 39px;
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 16px;
+}
+.yj_text a {
+    display: inline-block;
+     margin-top: 30px;
+}
+/* <!-- 图片列表详情结束 --> */
+/* 活动详情 以及图片 结束 */
+
+
+
+
+/* 下载游戏  开始 */
+.yj_download {
+    width: 340px;
+    float: right;
+}
+/* 下载游戏 结束 */
+/* 页面最大背景图片  结束*/
+
+/* 页码开始 */
+.yj_page {
+    width: 396px;
+    height: 35px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 26%;
+}
+.yj_page p{
+    width: 396px;
+    line-height: 35px;
+    font-weight: bolder;
+    margin: 0 auto
+}
+.yj_page a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    color: #d9d9d9;
+    background-color: #657ca2;
+
+}
+/* 页码结束 */
+/* 回顶部  开始 */
+.return_top {
+    position: fixed;
+    width: 52px;
+    height: 51px;
+    right:100px;
+    
+}
+/* 回顶部 结束 */

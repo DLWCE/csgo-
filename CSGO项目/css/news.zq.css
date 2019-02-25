@@ -1,0 +1,145 @@
+/*���Ż
+** Created by ʱ�� on 2018/12/6.
+*/
+.qq-news {
+
+    height: 855px;
+    width: 100%;
+    background: url("../images/bg-news_f07d62cb274d407410bab85f06984428.jpg") no-repeat center;
+}
+
+.qq-title {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1px;
+    padding: 90px 0 40px;
+}
+.news-content {
+
+    margin: 0 auto;
+    width: 1300px;
+    height: 602px;
+}
+
+.qqBox {
+    background: url("../images/bg-panel_d40e87df416329b2d7fee5f36f705ea4.jpg");
+    overflow: hidden;
+    height: 100%;
+}
+
+.qqBox .qqBox_left {
+    width: 800px;
+    margin:  0 30px;
+    font-size: 14px;
+    color: #fff;
+    float: left;
+
+}
+
+.qqBox_left .panel-tabs {
+    overflow: hidden;
+    border-bottom: 1px solid hsla(0, 0%, 100%, .2);
+}
+
+.qqBox_left .panel-tabs li.active {
+    border-bottom-color: #fff;
+
+}
+
+.qqBox_left .panel-tabs li.move {
+    border-bottom-color: #fff;
+
+}
+
+.panel-tabs li {
+    float: left;
+    font-weight: 700;
+    font-size: 28px;
+    cursor: pointer;
+    border-bottom: 4px solid transparent;
+    height: 70px;
+    line-height: 70px;
+    color: #fff;
+    list-style: none;
+    margin-left: 25px;
+    padding: 0 20px;
+}
+
+.qq-list-items .qq-list-item {
+    padding: 0 25px;
+}
+
+.qq-list-item .qq-list-vertical {
+    margin-bottom: 23px;
+    margin-top: 18px;
+    overflow: hidden;
+}
+
+.qq-list-vertical li {
+    line-height: 45px;
+    padding-left: 20px;
+    position: relative;
+    overflow: hidden;
+    padding-right: 55px;
+    list-style: inside;
+}
+
+.qq-list-vertical li a {
+    color: #fff;
+    font-size: 16px;
+}
+
+.qq-list-vertical li .date {
+    position: absolute;
+    right: 0;
+}
+
+.qq-list-vertical li a:hover {
+    text-decoration: underline;
+}
+
+.qq-list-item .link-btn {
+    margin: 0 -25px;
+}
+
+.link-btn {
+    display: block;
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: hsla(0, 0%, 100%, .2);
+    color: #fff;
+    font-size: 16px;
+}
+
+.qqBox .qqBox_right {
+    width: 400px;
+    height: 565px;
+    float: right;
+    padding-top: 37px;
+    padding-right: 30px;
+}
+
+.qqBox_right .img-link {
+    display: block;
+    margin-bottom: 20px;
+    position: relative;
+    width: 400px;
+    height: 144px;
+}
+
+.qqBox_right .img-link .status {
+    color: #eee;
+    font-size: 12px;
+    text-align: center;
+    width: 50px;
+    height: 15px;
+    line-height: 15px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    z-index: 20;
+    background: url('../images/event_tab.png') 0 -30px no-repeat;
+}

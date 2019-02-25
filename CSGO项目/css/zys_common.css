@@ -1,0 +1,71 @@
+/* 初始化代码开始 */
+body,
+div,
+span,
+a,
+input,
+img,
+ul,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+strong,
+em,
+ins,
+del,
+i,
+p,
+video {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font: 12px/100% "微软雅黑";
+    /*color: #333;*/
+    background-color: #f6f6f6;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+input {
+    border: none;
+    outline: none;
+}
+img {
+    border: none;
+    vertical-align: middle;
+}
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+}
+li {
+    list-style: none;
+}
+i {
+    font-style: normal;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix {
+    *zoom: 1;
+}
+.w {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+/* 初始化代码结束 */

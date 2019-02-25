@@ -1,0 +1,647 @@
+/*头部开始*/
+.zdh-w{
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.zdh-header {
+    height: 33px;
+    background-color: #474747;
+    color: #CCC;
+}
+
+.zdh-header-left {
+    float: left;
+    line-height: 33px;
+}
+
+.zdh-header-right {
+    float: right;
+}
+
+.zdh-header-right .zdh-car {
+    width: 121px;
+    height: 31px;
+    background-color: #1e1e1e;
+}
+
+.zdh-header-right .zdh-car:hover {
+    background-color: #db2825;
+    color: #ffffff;
+}
+
+.zdh-header-right a:hover span,
+.zdh-header-right a:hover i{
+    color: #ffffff;
+}
+
+.zdh-car a {
+    display: block;
+    width: 121px;
+    height: 31px;
+}
+
+.zdh-car i {
+    color: #80252d;
+    margin: 0 8px;
+    font-weight: bold;
+}
+
+.zdh-car span {
+    color: #db2825;
+}
+
+.zdh-header-right .zdh-li1{
+    margin-right: 33px;
+}
+
+.zdh-header-right .zdh-li i {
+    margin: 0 5px;
+}
+
+.zdh-header-right .zdh-li3{
+    margin-right: 38px;
+}
+
+.zdh-header-right li{
+    float: right;
+    line-height: 33px;
+}
+
+.zdh-header-right li a {
+    color: #CCC;
+}
+
+div {
+    display: block;
+}
+.zdh-top-nav {
+    height: 101px;
+    background-color: #FFF;
+    border-bottom: 3px solid #de2f3c;
+}
+
+.zdh-top-nav .zdh-logo-wm {
+    float: left;
+    display: inline-block;
+    width: 183px;
+    text-align: center;
+    height: 72px;
+    padding-top: 29px;
+    background-color: #c20315;
+    margin-bottom: -3px;
+}
+
+.zdh-top-nav .zdh-logo-shop {
+    float: left;
+    margin: 37px 0 0 34px;
+}
+
+.zdh-top-nav  .zdh-all-goods {
+    float: left;
+    position: relative;
+    width: 175px;
+    margin-left: 50px;
+    text-align: left;
+}
+
+.zdh-top-nav .zdh-all-goods p {
+    display: block;
+    height: 102px;
+    line-height: 101px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.zdh-top-nav .zdh-nav-ul {
+    margin-top: 40px;
+    float: left;
+}
+
+.zdh-nav-ul a:hover{
+    color: #e32332;
+}
+
+.zdh-top-nav .zdh-nav-ul li {
+    float: left;
+    padding: 0 15px;
+    font-size: 15px;
+}
+
+.zdh-top-nav .zdh-nav-search{
+    float:right;
+    position: relative;
+    width: 320px;
+    height: 41px;
+    margin-top: 30px;
+}
+
+.zdh-top-nav .zdh-nav-search input {
+    float: left;
+    width: 263px;
+    height: 39px;
+    line-height: 39px;
+    padding: 0 5px;
+    border: 1px solid #CCC;
+    border-right: 0;
+}
+
+.zdh-top-nav .zdh-nav-search .btn {
+    float: right;
+    width: 46px;
+    height: 41px;
+    border: 0;
+    background: #e32332;
+    cursor: pointer;
+}
+
+.zdh-top-nav .zdh-nav-search .btn i{
+    color: #ffffff;
+    font-size: 35px;
+}
+
+/*头部结束*/
+
+
+/*顶部导航开始*/
+.zdh-banner {
+    padding-top: 183px;
+    background: url(../images/banner.jpg);
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+.zdh-banner .zdh-main {
+    padding-bottom: 40px;
+    background-color: rgba(255,255,255,0.8);
+    height: 888px;
+}
+
+.zdh-main .zdh-main-top {
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 26px;
+    color: #ffd253;
+}
+
+.zdh-main-ul {
+    padding: 9px 0 18px 9px;
+}
+
+.zdh-main-ul li {
+    position: relative;
+    float: left;
+    width: 275px;
+    height: 365px;
+    margin: 9px;
+    background-color: #FFF;
+}
+
+.zdh-main-ul .zdh-pic {
+    width: 275px;
+    height: 275px;
+    line-height: 275px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.zdh-main-ul .zdh-pic img {
+    width: 210px;
+    height: 210px;
+}
+
+.zdh-main-ul .zdh-inf {
+    height: 75px;
+    padding-top: 15px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #EEE;
+}
+
+.zdh-all-goods p i {
+    color: #e32332;
+    margin-right: 5px;
+}
+
+.zdh-goods-ul {
+    position: absolute;
+    top: 104px;
+    left: 0;
+    padding-bottom: 10px;
+    display: none;
+    width: 100%;
+    font-size: 14px;
+    background-color: #FFF;
+}
+
+.zdh-all-goods:hover {
+    background-color: #e32332;
+}
+
+.zdh-goods-li a {
+    display: block;
+    padding-left: 25px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #FFF;
+    color: #474747;
+    position: relative;
+}
+
+.zdh-goods-li a:hover {
+    color: #bd2c00;
+    background-color: #f0f0f0;
+}
+
+/*顶部导航结束*/
+
+/*footer底部开始*/
+
+.zdh-about {
+    padding: 23px 0 40px;
+    background-color: #FFF;
+    margin-top: 40px;
+    display: block;
+    float: left;
+}
+.zdh-footer .zdh-about-ul {
+    display: block;
+    height: 45px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+
+.zdh-footer .zdh-about-ul li{
+    float: left;
+    width: 297px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 18px;
+    border-right: 1px solid #e9e9e9;
+    color: #999;
+}
+
+.zdh-about-ul li i{
+    font-size: 38px;
+    color: red;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.zdh-footer .zdh-about-ul li a{
+    font-size: 18px;
+    color: #999;
+}
+
+.zdh-footer .zdh-about-ul li:last-child {
+    width: 295px;
+    border: none;
+}
+
+/*zdh-footer-bt*/
+.zdh-footer-bt {
+    border-top: 1px solid #e9e9e9;
+    float: left;
+    padding-top: 40px;
+}
+
+.zdh-footer-bt dl {
+    float: left;
+    width: 223px;
+    text-indent: 70px;
+}
+
+.zdh-footer-bt dt {
+    height: 35px;
+    font-size: 14px;
+    width: 223px;
+}
+
+.zdh-footer-bt dd {
+    height: 24px;
+}
+
+.zdh-footer-bt dd a{
+    color: #999;
+}
+
+.zdh-footer-bt dd a:hover {
+    color: #ea0f1f;
+}
+
+.zdh-footer-bt .zdh-footer-bt-r {
+    float: right;
+    min-height: 115px;
+    width: 227px;
+    padding-left: 67px;
+    border-left: 1px solid #e9e9e9;
+}
+
+.zdh-footer-bt-r .zdh-tel{
+    font-size: 24px;
+}
+
+.zdh-footer-bt-r .zdh-time{
+    font-size: 14px;
+    padding: 16px 0 24px 0;
+    color: #999;
+}
+
+.zdh-footer-bt-r a{
+    display: block;
+    width: 154px;
+    height: 35px;
+    font-size: 16px;
+    line-height: 35px;
+    text-align: center;
+    color: #ea0f1f;
+    border: 1px solid #ff5353;
+    border-radius: 3px;
+}
+
+.zdh-footer-bt-r a:hover {
+    color: #e9e9e9;
+    background-color: #ea0f1f;
+}
+/*zdh-footer-bt*/
+
+/*zdh-footer-info*/
+.zdh-footer-info {
+    padding: 40px 0 40px 0;
+    text-align: center;
+
+}
+
+.zdh-footer-info a{
+    color: #999;
+}
+
+.zdh-footer-info .zdh-cf{
+    width: 420px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: block;
+    padding-top: 20px;
+}
+
+.zdh-footer-info .zdh-cf li {
+    float: left;
+    width: 70px;
+    text-align: center;
+    height: 12px;
+    line-height: 12px;
+    border-right: 1px solid #fff;
+    margin-right: -1px;
+}
+
+.zdh-footer-info .zdh-txt {
+    color: rgb(153, 153, 153);
+    padding: 24px 0 15px;
+}
+
+.zdh-footer-info .zdh-img {
+    display: block;
+    padding: 1px 0 30px;
+    margin: 0 auto;
+    width: 570px;
+
+}
+
+.zdh-footer-info .zdh-img li{
+    float: left;
+    width: 108px;
+    height: 40px;
+    margin: 0 3px;
+    display: block;
+}
+
+.zdh-cf li i {
+    color: #999;
+    margin-left: 5px;
+}
+/*zdh-footer-info*/
+/*footer底部结束*/
+
+/*左悬浮固定导航开始*/
+.zdh-nav-fixed-l {
+    /*top: 125px;*/
+    position: fixed;
+    top: 50%;
+    left: 0;
+    margin-top: -230px;
+    width: 120px;
+    text-align: center;
+}
+
+.nav-fixed-l-tit a{
+    display: block;
+    background-color: #6a6a44;
+    height: 45px;
+    line-height: 45px;
+    font-size: 18px;
+    color: #e9ccaf;
+}
+
+.zdh-tip {
+    color: #666;
+}
+
+.zdh-tip .zdh-p1 {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.zdh-tip .zdh-p2 {
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.zdh-tip .zdh-p3 {
+    font-size: 16px;
+    line-height: 21px;
+    height: 35px;
+}
+/*左悬浮固定导航结束*/
+
+/*右侧悬浮条开始*/
+.zdh-fixed-r {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 35px;
+    height: 100%;
+    background-color: black;
+    text-align: center;
+}
+
+.zdh-fixed-r-top i,
+.zdh-fixed-r-top a {
+    color: #fffdef;
+    display: block;
+    font-size: 20px;
+    line-height: 36px;
+    margin: 0 auto;
+}
+
+.zdh-fixed-r-top {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    margin-top: -140px;
+}
+
+
+
+.zdh-fixed-r-top .zdh-grzx i {
+    height: 20px;
+    margin: 0 auto;
+}
+
+.zdh-fixed-r-top dd{
+    height: 36px;
+}
+
+.zdh-fixed-r-top dd:hover {
+    background-color: #ea0f1f;
+}
+
+.zdh-my-car span .iconfont {
+    height: 18px;
+    color: #bd2c00;
+    font-size: 22px;
+}
+
+.zdh-fixed-r-top .zdh-my-car .zdh-num {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    line-height: 21px;
+    font-size: 11px;
+    text-align: center;
+    background-color: #df2f3a;
+    border-radius: 11px;
+}
+
+.zdh-my-car  a span {
+    display: inline-block;
+    width: 22px;
+    margin: 0 auto;
+    padding: 13px 2px;
+    font-size: 13px;
+    border-top: 1px solid #323232;
+    border-bottom: 1px solid #323232;
+}
+
+.zdh-my-car:hover {
+    background-color: #ea0f1f;
+}
+
+.zdh-my-car:hover a span{
+    border-top: 1px solid #ea0f1f;
+    border-bottom: 1px solid #ea0f1f;
+}
+
+.zdh-my-car:hover .zdh-num {
+    background-color: black;
+}
+.zdh-my-car:hover i{
+    color: #fffdef;
+}
+
+.zdh-go-up {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    display: none;
+}
+
+.zdh-go-up img {
+    width: 35px;
+}
+
+/*右侧悬浮条结束*/
+
+/*zdh-add*/
+.zdh-add {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    /*display: none;*/
+    background-color: #303030;
+}
+
+.zdh-wujiaoxing {
+    text-align: center;
+    margin-top: 9px;
+    color: #df2f3a;
+}
+
+.zdh-add .zdh-star {
+    /*display: block;*/
+    width: 74px;
+    height: 14px;
+    margin: 12px auto;
+
+}
+
+.zdh-add .zdh-star i {
+    color: #63a35c;
+
+}
+
+.zdh-addCart{
+    position: absolute;
+    top: 38px;
+    left: 50%;
+    width: 214px;
+    height: 45px;
+    line-height: 45px;
+    margin: 0 auto 0 -108px;
+    text-align: center;
+    border: 1px solid #FFF;
+    font-size: 16px;
+    color: #FFF;
+}
+
+.zdh-addCart i{
+    display: inline-block;
+    width: 22px;
+    height: 18px;
+    margin-right: 9px;
+    font-size: 25px;
+    vertical-align: -3px;
+}
+
+.zdh-addCart:hover {
+    background-color: #e32332;
+    border: 1px solid #e32332;
+}
+
+/*zdh-add*/
+.zdh-like {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    color: #999;
+    line-height: 14px;
+}
+
+.zdh-like i {
+    font-size: 20px;
+    margin-right: 3px;
+}
+
+.zdh-like:hover {
+    color: #e32332;
+}
+/*like*/

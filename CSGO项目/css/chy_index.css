@@ -1,0 +1,504 @@
+body,
+div,
+a,
+span,
+p,
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+img,
+input,
+strong,
+i,
+em,
+ins,
+del {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+
+input {
+    border: 0 none;
+    outline: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #666666;
+}
+
+i {
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 400;
+}
+
+body {
+    font: 14px/100% "微软雅黑";
+    background-color: #fff;
+}
+
+.clearfix::after {
+    content: ".";
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.w {
+    width: 1230px;
+    margin: 0 auto;
+}
+/* 初始代码 */
+
+/*top部分开始*/
+.chy_top {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: #111521;
+    border-top: 2px solid #6b9ac8;
+    z-index: 1;
+}
+.chy_top .chy_topBar {
+    width: 1230px;
+    height: 80px;
+    margin: 0 auto;
+    position: relative;
+}
+.chy_topBar .chy_logo {
+    width: 134px;
+    height: 64px;
+    margin-right: 100px;
+    padding: 8px 0 8px 23px;
+    float: left;
+}
+.chy_logo a {
+    display: block;
+    width: 134px;
+    height: 64px;
+    background: url("../images/cslogo.png") no-repeat;
+    background-size: 134px;
+}
+.chy_topNav {
+    float: left;
+    padding-top: 20px;
+    height: 57px;
+}
+.chy_topNav li {
+    float: left;
+    height: 57px;
+    margin: 0 25px;
+    /*border-bottom: 2px solid #6b9ac8;*/
+}
+.chy_topNav a {
+    display: block;
+    height: 57px;
+    width: 100%;
+}
+.chy_topNav h4 {
+    font-size: 16px;
+    color: #fff;
+    line-height: 20px;
+}
+.chy_topNav p {
+    font-size: 12px;
+    color: #fff;
+    line-height: 16px;
+}
+.chy_user {
+    float: right;
+    margin-right: 30px;
+    margin-top: 35px;
+}
+.chy_user p {
+    font-size: 14px;
+    color: #fff;
+}
+.chy_user p a {
+    font-size: 14px;
+    color: #566e95;
+}
+/*top部分结束*/
+
+/*main部分开始*/
+.chy_main {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background: url("../images/video_bg.jpg") no-repeat;
+}
+.chy_main .chy_videoCenter {
+    width: 1230px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 230px;
+}
+.chy_videoCenter .chy_videoTit {
+    width: 290px;
+    height: 111px;
+    margin-bottom: 86px;
+    background: url("../images/video_tit.png") no-repeat;
+}
+.chy_videoCenter .chy_videoHead {
+    width: 834px;
+    color: #e1e2e4;
+}
+.chy_videoHead p {
+    width: 100%;
+    font-size: 14px;
+    line-height: 19px;
+}
+.chy_videoHead p a {
+    color: #e1e2e4;
+}
+.chy_videoCenter .chy_videoLeft {
+    width: 874px;
+    margin-top: 18px;
+    margin-right: 10px;
+    float: left;
+}
+.chy_videoLeft .chy_videoHot {
+    width: 874px;
+    height: 327px;
+    margin-bottom: 22px;
+}
+.chy_videoHot .chy_videoBanner {
+    width: 534px;
+    height: 327px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    background-color: #000;
+}
+.chy_videoBanner .chy_BannerBox {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 400%;
+    height: 327px;
+}
+.chy_BannerBox li {
+    float: left;
+    width: 534px;
+}
+.chy_BannerBox li a {
+    display: block;
+    width: 534px;
+    height: 327px;
+}
+.chy_videoBanner ol {
+    height: 13px;
+    position: absolute;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    bottom: 10px;
+    left: 30px;
+}
+.chy_videoBanner ol li {
+    width: 12px;
+    height: 12px;
+    margin: 0 8px;
+    border-radius: 6px;
+    float: left;
+    cursor: pointer;
+    background-color: #574f44;
+}
+.chy_videoBanner ol li.active {
+    width: 28px;
+    background-color: #9d8c73;
+}
+.chy_videoHot .chy_videoCommend {
+    width: 308px;
+    height: 287px;
+    padding: 20px 16px;
+    float: left;
+    background: url("../images/recommend_bg.jpg");
+}
+.chy_videoCommend .chy_commendTit {
+    width: 100%;
+    position: relative;
+}
+.chy_commendTit a {
+    display: block;
+    width: 223px;
+    height: 22px;
+    background: url("../images/recommend_tit.png") no-repeat;
+}
+.chy_videoCommend .chy_commendCon {
+    width: 308px;
+}
+.chy_commendCon li {
+    width: 146px;
+    float: left;
+    margin: 24px 4px 24px 4px;
+}
+.chy_commendCon li a {
+    display: block;
+    width: 146px;
+    height: 75px;
+    position: relative;
+}
+.chy_commendCon li a img {
+    width: 100%;
+    height: 75px;
+}
+.chy_commendCon li a p {
+    width: 146px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+    color: #e1e2e4;
+    text-align: center;
+    margin-top: 8px;
+}
+.chy_commendCon li a span {
+    display: block;
+    width: 39px;
+    height: 39px;
+    background: url("../images/play_btn.png") no-repeat;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    left: 50%;
+    margin-left: -20px;
+}
+.chy_hotTab {
+    width: 832px;
+    height: 236px;
+    padding-top: 28px;
+    padding-left: 42px;
+}
+.chy_hotTab h2 {
+    width: 135px;
+    height: 22px;
+    cursor: pointer;
+    margin-bottom: 28px;
+    background: url("../images/hot_tab_tit.png");
+}
+.chy_hotTab .chy_tabList {
+    width: 100%;
+    height: 44px;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+.chy_hotTab .chy_tabList li {
+    float: left;
+    width: 83px;
+    height: 38px;
+    line-height: 38px;
+    margin: 3px 3px;
+    text-align: center;
+}
+.chy_hotTab .chy_tabList li a {
+    display: block;
+    width: 100%;
+    height: 38px;
+    color: #856931;
+    background: url("../images/d_tab_bg.png");
+}
+.chy_hotTab .chy_tabList li a.chy_on {
+    background: url("../images/tab_bg.png");
+}
+.chy_tabListOne,
+.chy_tabListTwo,
+.chy_tabListThree {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+.chy_tabListOne h3,
+.chy_tabListTwo h3,
+.chy_tabListThree h3 {
+    float: left;
+    width: 56px;
+    font-size: 16px;
+    height: 16px;
+    line-height: 16px;
+    font-weight: bold;
+    color: #856931;
+}
+.chy_tabListOne .chy_tabListOneT,
+.chy_tabListTwo .chy_tabListTwoT,
+.chy_tabListThree .chy_tabListThreeT {
+    float: left;
+}
+.chy_tabListOne .chy_tabListOneT li,
+.chy_tabListTwo .chy_tabListTwoT li,
+.chy_tabListThree .chy_tabListThreeT li {
+    float: left;
+    margin: 3px 3px;
+    padding: 0px 8px;
+    font-size: 14px;
+}
+.chy_tabListOne .chy_tabListOneT li a,
+.chy_tabListTwo .chy_tabListTwoT li a,
+.chy_tabListThree .chy_tabListThreeT li a {
+    display: block;
+    width: 100%;
+    color: #666;
+}
+.chy_videoLeft .chy_hotVideosBox {
+    width: 832px;
+    position: relative;
+    padding: 10px 0 42px 42px;
+}
+.chy_hotVideosBox .chy_hotVideos {
+    width: 100%;
+    height: 2240px;
+    overflow: hidden;
+}
+.chy_hotVideos li {
+    width: 182px;
+    height: 130px;
+    float: left;
+    margin: 0 5px;
+    margin-bottom: 30px;
+}
+.chy_hotVideos li a {
+    display: block;
+    width: 182px;
+    height: 110px;
+    position: relative;
+    overflow: hidden;
+}
+.chy_hotVideos li a img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.chy_hotVideos li a span {
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    background: url("../images/play_btn.png");
+    top: 50%;
+    margin-top: -20px;
+    left: 50%;
+    margin-left: -20px;
+}
+.chy_hotVideos li p {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    color: #40424d;
+    text-align: center;
+    margin-top: 12px;
+}
+.chy_videoLeft .chy_pageBtn {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.chy_pageBtn .chy_btnLists li{
+    float: left;
+    margin: 0 3px;
+}
+.chy_pageBtn .chy_btnLists li a {
+    color: #282828;
+    font-size: 14px;
+    padding: 3px 6px;
+    border: 1px solid #c9c9c9;
+}
+.chy_pageBtn .chy_btnLists li a.chy_light {
+    background-color: #657ca2;
+}
+.chy_pageBtn .chy_btnLists .chy_btnListsLast {
+    margin-left: 250px;
+}
+.tc_right_box {
+    float: right;
+    margin-top: 18px;
+}
+    /*main部分结束*/
+
+/*footer部分开始*/
+.chy_footer {
+    width: 100%;
+    height: 160px;
+    background-color: #000;
+    font-size: 12px;
+    color: #959595;
+    position: relative;
+}
+.chy_footer .chy_footerIn {
+    width: 1104px;
+    margin: 0 auto;
+    position: relative;
+}
+.chy_footerIn ul {
+    position: absolute;
+    top: 40px;
+    width: 1104px;
+}
+.chy_footerIn li {
+    float: left;
+    padding: 0 12px;
+}
+.chy_footerIn li.chy_footerInLast {
+    font-size: 12px;
+    padding: 0;
+}
+.chy_footerIn p.chy_footerInBottom {
+    position: absolute;
+    top: 85px;
+    left: 230px;
+    font-size: 12px;
+    color: #555;
+    text-align: center;
+    line-height: 1.5;
+}
+.chy_footerIn p.chy_footerInBottom a {
+    color: #53bdfa;
+}
+/*footer部分结束*/
+.chy_fixedBox {
+    position: fixed;
+    width: 52px;
+    height: 52px;
+    background: url("../images/top_icon.png");
+    left: 65%;
+    bottom: 270px;
+    margin-left: 387px;
+}
+.keJ {
+    display: none;
+}
+.chy_fixedBox a {
+    display: block;
+    width: 52px;
+    height: 52px;
+}

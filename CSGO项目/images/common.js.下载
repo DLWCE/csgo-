@@ -1,0 +1,360 @@
+(function () {
+	function isMobile(){
+		var userAgentInfo = navigator.userAgent;  
+		var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod", "Windows CE", "BlackBerry");  
+		var flag = false;  
+		for (var v = 0; v < Agents.length; v++) {  
+		   if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = true; break; }  
+		}  
+		return flag;
+	}
+	function login(redirect) {
+		var loginUrl = redirect;
+		if(isMobile() == true) {
+			location.href=loginUrl;
+			return;
+		}
+		var layer = $('#loginLayer');
+		if (layer.size() == 0) {
+			layer = $('<div id="loginLayer"></div>');
+			if(isMobile() == false) {
+				layer.css({
+					'width': '448px',
+					'height': '575px',
+					'position': 'fixed',
+					'left': '50%',
+					'top': '50%',
+					'margin-left': '-224px',
+					'margin-top': '-300px',
+					'border': '1px solid #369be3',
+					'box-shadow': '0 2px 5px #7c7c7c',
+					'z-index': 111
+				});
+			}
+			var closeBtn = $('<a href="javascript:;" id="J_closeLogin"></a>')
+			closeBtn.css({
+				'position': 'absolute',
+				'right': '14px',
+				'top': '14px',
+				'width': '20px',
+				'height': '20px',
+				'cursor': 'pointer'
+			});
+			layer.append(closeBtn);
+			layer.append('<iframe scrolling="no" allowtransparency="yes" src="' + loginUrl + '" frameborder="0" width="448" height="575"></iframe>');
+			$('body').append(layer);
+		}
+
+		$('#J_csgo_prompt_bg').show();
+
+		layer.show();
+	}
+
+	function closeLogin() {
+		$('#J_csgo_prompt_bg').hide();
+		$('#loginLayer').hide();
+	}
+
+	function toHex(str) {
+		var dest = "";
+		for (var i = 0; i < str.length; i++) {
+			dest += str.charCodeAt(i).toString(16);
+		}
+		return dest;
+	}
+
+	function showNotice() {
+		var str = '<div class="popup" style="width: 100%;height: 100%;z-index: 2000;position: fixed;top: 0;left: 0;"><span style="width: 513px;height: 301px;margin: -150px 0 0 -256px;background: url(http://www.csgo.com.cn/web201703/images/main/popup.png) no-repeat center center;position: absolute;top: 50%;left: 50%;"><a href="javascript:;" class="popup_close" style="width: 48px;height: 48px;position: absolute;top: 0;right: 0;"></a></span></div>'
+		$('body').append(str)
+		$('.popup_close').on('click', function () {
+			$('.popup').remove()
+		});
+	}
+
+	function init() {
+		//加载完显示头尾
+		$('#J_csgo_header_nav, #J_csgo_footer_bar').show();
+		var HtmlUtil = {
+			htmlEncodeByRegExp: function (str) {
+				var s = "";
+				if (str.length == 0) return "";
+				s = str.replace(/&/g, "&amp;");
+				s = s.replace(/</g, "&lt;");
+				s = s.replace(/>/g, "&gt;");
+				s = s.replace(/ /g, "&nbsp;");
+				s = s.replace(/\'/g, "&#39;");
+				s = s.replace(/\"/g, "&quot;");
+				return s;
+			}
+		};//xss防止恶意字符
+
+		if(isMobile() == false) {
+			var prompt_bg = $('<div class="prompt_bg" id="J_csgo_prompt_bg"></div>')
+			prompt_bg.css({
+				'position': 'fixed',
+				'left': '0',
+				'top': '0',
+				'width': '100%',
+				'height': '100%',
+				'background-color':'rgba(0,0,0,0.7)',
+				'z-index': '8888',
+				'display':'none'
+			});
+			$('body').append(prompt_bg);
+		}
+		//login
+		$(document).on('click', '#loginBtn,.btn_log_in', function () {
+			var _url =window.csgo_login_redirect_url || location.href,
+				_redirect = 'https://passport.wanmei.com/sso/login?service=csgo&isiframe=1&location=' + toHex(_url);
+			login(_redirect);
+			$('#loginLayer').css({
+				'z-index': 9999
+			})
+		})
+		.on('click', '#J_closeLogin', function () {
+			closeLogin();
+		});
+		var qurl = window.location.href,
+			res_username = '';
+		$(".btn_log_out").attr('href', 'https://passport.wanmei.com/sso/logout?service=csgo&serviceurl=' + qurl);
+		$.ajax({
+			url: "https://passport.wanmei.com/sso/loginstatus",
+			type: "POST",
+			dataType: "jsonp",
+			jsonp: "jsonpCallback",
+			success: function (data) {
+				if (data.code == 0) {
+					$(".topbar2").removeClass('in').addClass('out');
+					var userId = data.data.id;
+					var userName = data.data.username;
+					res_username = HtmlUtil.htmlEncodeByRegExp(userName);
+					//$(".log_out .userName").html(userName);
+					var J_navuserName = $('#J_navuserName'),
+						getuserinfo = '';
+
+					var loadAjax01 = function () {
+						return $.ajax({
+							url: "//comment.wanmei.com/query/getNickname",
+							type: "get",
+							dataType: "jsonp",
+
+							success: function (data) {
+								if (data.code == 1 && data.result != null && data.result != '') {
+									//$(".log_out .userName").html(data.result);
+									res_username = HtmlUtil.htmlEncodeByRegExp(data.result);
+								}
+							},
+							error: function(status){
+							},
+							complete : function(XMLHttpRequest,status){ //请求完成后最终执行参数						　　　　
+						　　}
+						});
+					}
+					var loadAjax02 = function () {
+						return $.ajax({
+							url: '//csgo.wanmei.com/ajax/userinfo',
+							/* xhrFields: {
+								withCredentials: true
+							}, */
+							type: "get",
+							error : function(xhr, ajaxOptions, thrownError){
+							},
+							dataType: "jsonp",
+							success: function (res) {
+								var steamid = res.data.is_bind_steam;
+								if (steamid == null || steamid == false) {
+									$(".userInfo_none").show();
+								} else {
+									var personastate = res.data.personastate; //在线状态
+									var personaname = res.data.personaname; //昵称
+									var imgUrl = res.data.avatarmedium; //图片路径
+									if (personastate == 1) {
+										personastate = "在线"
+									} else {
+										personastate = "离线"
+									}
+									$(".personaname").html(HtmlUtil.htmlEncodeByRegExp(personaname));//昵称
+									$(".portrait img").attr("src", imgUrl); //设置图片
+									$(".online").html(personastate);
+									res_username = HtmlUtil.htmlEncodeByRegExp(personaname);
+									J_navuserName.html(res_username);
+									getuserinfo = true;
+								}
+								var lastonline = res.data.lastlogoff; //上次在线时间
+								var identityVerificationStatus = res.data.identity_verified; //身份认证
+								var identityStatus = res.data.isIndulge; //已登记防沉迷
+								var userName = res.data.username; //完美通行证
+								var mobile = res.data.mobile_bind;
+								if (res.data.hasOwnProperty("email_bind")) {
+									var email = data.data.email_bind;
+								}
+								if (identityVerificationStatus == true) {
+									identityVerificationStatus = "已荣耀认证"
+								} else {
+									identityVerificationStatus = "未认证"
+								}
+								if (identityStatus == 1) {
+									identityStatus = "已登记防沉迷"
+								} else {
+									identityStatus = "未登记"
+								}
+								if (mobile == true) {
+									mobile = "已绑定"
+								} else {
+									mobile = "未绑定"
+								}
+								if (email !== "") {
+									email = "已绑定"
+								} else {
+									email = "未绑定"
+								}
+								$(".lastonline").html(lastonline); //上次在线时间
+								$(".state4").html("<i></i>" + identityVerificationStatus); //身份认证
+								$(".state1").html("<i></i>" + identityStatus); //已登记防沉迷
+								$(".state2").html("<i></i>" + mobile);
+								$(".state3").html("<i></i>" + email);
+								$(".userName").not('.log_out .userName').html(userName);//完美通行证
+							}
+						});
+					}
+					/* $.when(loadAjax01(), loadAjax02()).then(function () {
+						$('.log_out .userName').html(res_username)
+					}).fail(function(){
+						$('.log_out .userName').html(res_username)
+					}); */
+					/* $.when(loadAjax01())
+						.then(function(){
+							alert(res_username)
+							J_navuserName.html(res_username)
+							return loadAjax02();
+						}, function(){
+							J_navuserName.html(res_username)
+							alert(3)
+						})
+						.done(function(){
+							J_navuserName.html(res_username)
+							alert(4)
+						})
+						.then(function(){
+							J_navuserName.html(res_username)
+						}, function(){
+							J_navuserName.html(res_username)
+						}); */
+					//fixed deferred bug
+					var deferred = [loadAjax02()]
+					$.when.apply(null, deferred)
+						.then(function(res1,res2){
+							if(!getuserinfo){
+								J_navuserName.html(res_username)
+							}
+						},function(){
+							if(!getuserinfo){
+								J_navuserName.html(res_username)
+							}
+						})
+
+					$(".topbar2").on("mouseenter", function () {
+						$(".pop").slideDown();
+					}).on("mouseleave", function () {
+						$(".pop").slideUp();
+					});
+				}
+			}
+		});
+
+		var timer = setTimeout(function () {
+			$('.nav_btn').removeClass('on');
+			$('.nav_process_box').stop().animate({
+				'height': '0px'
+			}, 300);
+		}, 10000)
+		$('body').on('click', '.nav_btn', function () {
+			clearTimeout(timer)
+			if ($(this).hasClass('on')) {
+				$(this).removeClass('on');
+				$('.nav_process_box').stop().animate({
+					'height': '0px'
+				}, 300);
+			} else {
+				$(this).addClass('on');
+				$('.nav_process_box').stop().animate({
+					'height': '215px'
+				}, 300);
+			}
+		});
+
+		//给页面绑定滑轮滚动事件
+		if (document.addEventListener) { //firefox
+			document.addEventListener('DOMMouseScroll', scrollFunc, false);
+		}
+		//滚动滑轮触发scrollFunc方法  //ie 谷歌
+		window.onmousewheel = document.onmousewheel = scrollFunc;
+
+		function scrollFunc() {
+			$('.nav_btn').removeClass('on');
+			$('.nav_process_box').stop().animate({
+				'height': '0px'
+			}, 300);
+			var top = $(this).scrollTop(); // 当前窗口的滚动距离
+			if (top !== 0) {
+				$(".navbox").css({
+					"position": "fixed",
+					"z-index": 100,
+					"top": 0
+				})
+				$("body").css({
+					"paddingTop": "82px"
+				})
+			} else {
+				$(".navbox").css({
+					"position": "relative",
+					"z-index": 100,
+					"top": 0
+				})
+				$("body").css({
+					"paddingTop": "0px"
+				})
+			}
+		}
+
+		$('.process li p a').hover(function () {
+			$(this).closest('li').find('span').show();
+		}, function () {
+			$(this).closest('li').find('span').hide();
+		})
+
+
+		$('.ico2_wx').hover(function () {
+			$('.pop_wx').show();
+		}, function () {
+			$('.pop_wx').hide();
+		})
+	}
+
+	function createBaseCss(url) {
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.href = url;
+		//document.getElementsByTagName('head')[0].appendChild(link);
+		document.querySelector('head').insertBefore(link, document.head.children[0]);
+	}
+	var loadScript = function (url) {
+		var script = document.createElement("script");
+		script.type = "text/javascript";
+		script.src = url;
+		document.querySelector('body').appendChild(script);
+	};
+
+	$(function () {
+		var version = '?v=20180928',
+			url = '';
+		url = location.href.indexOf('wanmei.com')>-1 ? '': '//csgo.wanmei.com';
+		$.when(
+			createBaseCss('//www.csgo.com.cn/web201709/style/base.css' + version),
+			$.getScript('//static.games.wanmei.com/public/js/stat.js'),   
+			$.getScript(url + '/js/libs/top_nav.js' + version),
+			$.getScript(url + '/js/libs/bottom_cover.js' + version)
+		)
+		.then(init);
+	})
+})();

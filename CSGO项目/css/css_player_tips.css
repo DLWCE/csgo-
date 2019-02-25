@@ -1,0 +1,398 @@
+/*<!--头部背景图片开始-->*/
+
+.cs_tips_bg{
+    position: relative;
+    height: 3555px;
+}
+
+.cs_tips_bgpic{
+    background: url("../images/tips_bg.jpg") no-repeat center top;
+    height: 674px;
+}
+
+.cs_container{
+    width: 1232px;
+    height: 216px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 230px;
+}
+
+.cs_tips_tit{
+    background: url("../images/tip_tit.png");
+    width: 290px;
+    height: 111px;
+    position: absolute;
+}
+
+.cs_tips_header{
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+
+}
+
+.cs_tips_header p{
+    font-size: 14px;
+}
+
+.cs_tips_header p a{
+    color: #fff;
+
+}
+
+/*<!-- 左边内容区开始-->*/
+.cs_con_left{
+    position:absolute;
+    width: 874px;
+    height: 3110px;
+    /*margin-bottom:0px;*/
+    /*margin-right: 18px;*/
+    /*float: left;*/
+    left: 50%;
+    margin-left: -620px;
+    margin-top: 18px;
+    /*注意:整合的时候可能存在问题*/
+}
+
+.cs_hot_topic{
+    width: 874px;
+    height: 327px;
+    margin-bottom: 22px;
+}
+
+.cs_tip_banner{
+    float: left;
+    width: 534px;
+    height: 327px;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+}
+
+.cs_tip_pics{
+    width: 2172px;
+    height: 327px;
+    position: absolute;
+}
+
+.cs_tip_pics li{
+    float: left;
+    width: 534px;
+}
+
+.cs_tip_pics li img{
+    width: 534px;
+    height: 327px;
+    display: block;
+}
+
+.cs_dots{
+    position: absolute;
+    height: 13px;
+    margin: 0 auto;
+    left: 30px;
+    bottom: 10px;
+}
+
+.cs_dots li{
+    float: left;
+    width: 12px;
+    height: 12px;
+    margin: 0 8px;
+    border-radius: 6px;
+    background-color: #574f44;
+    text-indent: -9999px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.cs_dots .current{
+    background-color: #9d8c73;
+    width: 28px;
+    height: 12px;
+}
+
+.cs_tip_box{
+    width: 308px;
+    height: 287px;
+    float: left;
+    padding: 20px 16px;
+    background: url("../images/recommend_bg.jpg");
+}
+
+.cs_tip_title{
+    margin-bottom: 26px;
+    position: relative;
+    width: 100%;
+}
+
+.cs_tip_title a{
+    display: block;
+    width: 223px;
+    height: 22px;
+}
+
+.cs_tip_title h2{
+    background: url("../images/tip_recommend_tit.png") no-repeat;
+    width: 223px;
+    height: 22px;
+}
+
+.cs_tip_recomd li{
+    margin-bottom: 6px;
+    height:34px;
+
+}
+
+.cs_tip_recomd li a{
+    width: 308px;
+    line-height: 30px;
+    color: #e1e2e4;
+    display: inline-block;
+}
+
+.cs_tip_recomd li a p{
+    font-size: 14px;
+}
+
+.cs_tip_recomd li span{
+    color: #999999;
+    font-size: 12px;
+    float: right;
+}
+
+/*热门标签*/
+.cs_hot_tab{
+    width: 832px;
+    height: 236px;
+    padding-top: 28px;
+    padding-left: 42px;
+    background-color: #fff;
+}
+
+.cs_hot_tab h2{
+    width: 135px;
+    height: 22px;
+    margin-bottom: 28px;
+    cursor:pointer;
+    background: url("../images/hot_tab_tit.png") no-repeat;
+}
+
+.cs_hot_tab .cs_tab_list{
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.cs_hot_tab .cs_tab_list a{
+    width: 83px;
+    height: 38px;
+    margin: 3px 3px;
+    line-height: 38px;
+    text-align: center;
+    color: #856931;
+    display: inline-block;
+    background: url("../images/d_tab_bg.png") no-repeat;
+}
+
+.cs_hot_tab .cs_tab_list a:hover{
+    background: url("../images/tab_bg.png") no-repeat;
+}
+
+.cs_hot_tab .cs_tab_list .team{
+    background: url("../images/tab_bg.png") no-repeat;
+}
+
+.cs_tab_con{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    height: 21px;
+}
+
+.cs_tab_con .cs_tab_tit{
+    float: left;
+    width: 56px;
+}
+
+.cs_tab_con .cs_tab_tit h3{
+    font-size: 16px;
+    font-weight: bold;
+    color: #856931;
+}
+
+.cs_tab_con .cs_tab_tit2{
+    float: left;
+}
+
+.cs_tab_con .cs_tab_tit2 a{
+    color:#666;
+    margin: 3px 3px;
+    padding: 0 8px;
+    font-size: 14px;
+}
+
+/*技巧列表开始*/
+.cs_tip_list{
+    width: 778px;
+    padding:0 48px;
+    padding-bottom: 54px;
+    background-color: #fff;
+}
+
+.cs_strategy_news{
+    width: 778px;
+    height: 132px;
+    padding: 24px;
+    border-bottom: 1px solid #d8d9db;
+    position: relative;
+}
+
+.cs_xv_view:hover{
+    cursor: pointer;
+    /*d嘟嘟*/
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+/*嘟嘟*/
+
+.cs_xv_info:hover{
+    cursor: pointer;
+}
+
+.cs_xv_view{
+    width: 182px;
+    height: 110px;
+    margin-top: 14px;
+    margin-right: 26px;
+    border: 1px solid #0d1118;
+    float: left;
+}
+
+.cs_xv_view img{
+    width: 182px;
+    height: 110px;
+    display: block;
+}
+
+.cs_xv_info {
+    width: 540px;
+    height: 132px;
+    float: left;
+    position: relative;
+    cursor: default;
+}
+
+
+.cs_xv_info h3{
+    height: 40px;
+    line-height: 40px;
+    color: #526b94;
+    font-size: 16px;
+}
+
+.cs_xv_info p{
+    width: 540px;
+    height: 40px;
+    margin-bottom: 28px;
+    line-height: 20px;
+    color: #404040;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.cs_xv_info a{
+    display: block;
+    width: 132px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    color: #f5f5f5;
+    background-color: #657ca2;
+}
+
+.cs_xv_info  span{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    color: #526b94;
+}
+
+
+/*页码开始*/
+.cs_page{
+    width: 100%;
+    /*height: 30px;*/
+    text-align: center;
+    background: #fff;
+}
+
+/*.cs_page .cs_pagination li{*/
+    /*display: inline;*/
+    /*margin: 0 3px;*/
+    /*height: 30px;*/
+    /*width: 20px;*/
+/*}*/
+/*.cs_pagination li a{*/
+    /*color:#282828;*/
+    /*/!*padding:3px 6px;*!/*/
+    /*border:1px solid #c9c9c9;*/
+    /*height: 30px;*/
+    /*width: 20px;*/
+/*}*/
+
+/*.cs_tag{*/
+    /*/!*color:#282828;*!/*/
+    /*/!*padding:3px 6px;*!/*/
+    /*border:1px solid #c9c9c9;*/
+    /*color:#fff;*/
+    /*background: #657ca2;*/
+    /*height: 30px;*/
+    /*width: 20px;*/
+/*}*/
+
+/*.cs_pagination .cs_tag a{*/
+    /*color:#fff;*/
+    /*background: #657ca2;*/
+/*}*/
+
+.tc_right_box{
+    position: absolute;
+    left: 50%;
+    margin-left: 275px;
+    margin-top: 18px;
+}
+
+/*<!--top锚点-->*/
+.cs_btn_top {
+    position: fixed;
+    width: 52px;
+    height: 52px;
+    background: url(../images/top_icon.png) no-repeat;
+    left: 65%;
+    bottom: 270px;
+    margin-left: 387px;
+    display: none;
+    z-index: 9;
+}
+
+.cs_btn_top a {
+    display: block;
+    height: 52px;
+}

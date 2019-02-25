@@ -1,0 +1,66 @@
+body,
+div,
+p,
+a,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+img,
+input,
+i,
+strong,
+del,
+ins,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+
+input {
+    outline: none;
+    border: 0 none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+    font: 12px/100% "微软雅黑"
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 400;
+}
+
+.clearfix::after {
+    content: ".";
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* 以上是初始代码 */

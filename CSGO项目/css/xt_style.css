@@ -1,0 +1,497 @@
+
+
+/*头部的开始*/
+.top{
+    height: 32px;
+    background-color: #ebebeb;
+    border-top: 1px solid #b6b4b6;
+    border-bottom: 1px solid #dfdfdf;
+}
+.inner li {
+    float: left;
+    line-height: 32px;
+    font-size: 12px;
+}
+.inner li.tag {
+    width: 1px;
+    height: 12px;
+    background-color: #666;
+    margin: 9px 12px;
+}
+.innr {
+    position: relative;
+    height: 129px;
+    width: 1200px;
+}
+.log a {
+    position: absolute;
+    width: 196px;
+    height: 59px;
+    background-color: #fff;
+    background: url("../images/logo.png");
+    background-size: 100%;
+    margin-top: 17px;
+    text-indent: -999px;
+    overflow: hidden;
+    margin-left: 12px;
+    display: inline-block;
+}
+.innr .slogan {
+    width: 281px;
+    height: 25px;
+    float: right;
+    background-color: #fff;
+    display: inline-block;
+    background: url("../images/slogan.jpg");
+    margin-top: 36px;
+}
+.head_index {
+    height: 512px;
+    width: 228px;
+    border:1px solid transparent;
+    border-radius: 9px;
+    position: absolute;
+    left: 0px;
+    top: 88px;
+    overflow: hidden;
+    color: #FFFFFF;
+    z-index: 1;
+}
+.innr .dt {
+    height: 40px;
+    width: 230px;
+    display: inline-block;
+    float: left;
+    background-color: #d72502;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+}
+.innr .dd {
+    height: 472px;
+    width: 230px;
+    background-color: #373b45;
+    float: left;
+    /*display: none;*/
+}
+.innr .dd ul {
+    float: left;
+    padding-top: 20px;
+    padding-left: 30px;
+
+}
+.innr .dd li {
+    line-height: 27px;
+    font-size: 14px;
+    width: 172px;
+
+}
+.innr .dd li a {
+    color: #FFFFFF;
+}
+.innr .dd li i.icon-z043 {
+    float: right;
+    font-size: 12px;
+}
+.head_nav {
+    width: 971px;
+    height: 40px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.head_nav li {
+    float: left;
+    font-size: 16px;
+    margin-left: 30px;
+    line-height: 40px;
+}
+.banner_all {
+    background-color: #001020;
+    height: 385px;
+    position: relative;
+}
+.banner_all img {
+    display: block;
+    margin: 0 auto ;
+}
+.banner_all .yuandian {
+    position: absolute;
+    bottom: 12px;
+    left: 899px;
+}
+.banner_all span {
+    float: left;
+    background-color: black;
+    background-color: rgba(0,0,0,0.3);
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+.banner_all .icon-jiantou4 {
+    position: absolute;
+    top: 170px;
+    left: 0;
+    font-size: 47px;
+    color: #FFFFFF;
+}
+.banner_all .icon-z043 {
+    position: absolute;
+    top: 170px;
+    right: 0;
+    font-size: 47px;
+    color: #FFFFFF;
+}
+
+/*主体部分开始*/
+.main {
+    width: 100%;
+    background-color: #f6f6f6;
+    height: 2000px;
+
+}
+/*第一模板*/
+
+.box1  {
+    overflow: hidden;
+}
+.box1  li {
+    display: inline-block;
+    width: 230px;
+    height: 99px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: 1px solid #e7e7e7;
+    border-radius: 8px;
+    background-color: #fff;
+
+}
+.box1  .li1 a,
+.box1  .li2 a,
+.box1  .li3 a {
+     width: 230px;
+     height: 99px;
+     display: block;
+ }
+
+.box1  .li1 img,
+.box1  .li2 img,
+.box1  .li3 img {
+    float:left;
+    margin:28px 0 0 34px;
+}
+.li1 span,
+.li2 span,
+.li3 span {
+    display: inline-block;
+    margin-top: 33px;
+    margin-left: 16px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.box1  .li4 a {
+    display: inline-block;
+    width: 112px;
+    height: 49px;
+    border-bottom: 1px solid #e7e7e7;
+}
+.box1  .li4 .baoMing,
+.box1  .li4 .xueYuan {
+    border-left: 1px solid #e7e7e7;
+}
+.box1  .li4 a:hover span {
+    color: red;
+}
+.box1  ul li.li4 img {
+    float: left;
+    margin: 12px 6px 0 12px;
+}
+.box1 .li4 span {
+    font-size: 14px;
+    line-height: 49px;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+/*第二模板*/
+.box2 {
+    height: 342px;
+    width: 1200px;
+    margin-top: 24px;
+    background-color: #fff;
+}
+.box2 .ht {
+    height: 60px;
+    width: 1200px;
+    line-height: 60px;
+}
+.box2 .xpic {
+    float: left;
+}
+.box2 .xtxt {
+    width: 394px;
+    height: 269px;
+    border: 1px solid #e5e5e5;
+    float: left;
+    background-color: #fff;
+}
+.box2 .xtxt h2 {
+    font-size: 18px;
+    padding: 38px 25px 20px;
+}
+.box2 .xtxt p {
+    font-size: 14px;
+    line-height: 25px;
+    padding: 0 25px;
+    color: #777;
+}
+.box2 .con2 {
+    width: 401px;
+    height: 252px;
+    float: right;
+    background-color: #fff;
+    padding-top: 16px;
+    border-top: 2px solid red;
+    border-bottom: 1px solid #e5e5e5;
+}
+.box2 .con2 li {
+    width: 401px;
+    height: 34px;
+    font-size: 16px;
+}
+.box2 .con2 li span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    float: left;
+    line-height: 25px;
+    text-align: center;
+    background-color: #a7a7a7;
+}
+.box2 .con2 .txt {
+    float: right;
+    display: inline-block;
+    width: 366px;
+    line-height: 25px;
+}
+.box2 .con2 .num1 span,
+.box2 .con2 .num2 span,
+.box2 .con2 .num3 span {
+    background-color: red;
+}
+/*第三模板*/
+.box3 {
+    height: 342px;
+    width: 1200px;
+    margin-top: 24px;
+    background-color: #fff;
+}
+.box3 .ht {
+    height: 60px;
+    width: 1200px;
+    line-height: 60px;
+}
+.box3 .con_1,
+.box3 .con_2,
+.box3 .con_3 {
+    width: 285px;
+    height: 274px;
+    float: left;
+    /*background-color: pink;*/
+    margin-right: 20px;
+}
+.box3 .con_4 {
+    width: 285px;
+    height: 274px;
+    float: right;
+}
+.box3 .a3 {
+    display: block;
+    width: 283px;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    font-size: 16px;
+    line-height: 28px;
+    text-overflow: ellipsis;
+    padding-top: 3px;
+    text-align: center;
+}
+.box3 .a3:hover {
+    color: red;
+}
+.box3 .con_4 {
+    width: 285px;
+    height: 254px;
+    float: right;
+    overflow: hidden;
+    border-top: 2px #d72502 solid;
+    padding-top: 17px;
+    border-bottom: 1px #e5e5e5 solid;
+}
+.box3 .con_4 li {
+    display: block;
+    margin-bottom: 20.5px;
+}
+.box3 .con_4 li span {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #535353;
+    left: 10px;
+    top: 7px;
+}
+.box3 .con_4 li a {
+    display:block;
+    width: 250px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 16px;
+    white-space: nowrap;
+}
+.box3 .con_4 li .a4:hover {
+    color: red;
+}
+
+
+/*第四模板*/
+.box4 {
+    width: 1200px;
+    height: 433px;
+    margin-top: 24px;
+    position: relative;
+    background-color: #fff;
+}
+.box4 h2{
+    font-size: 18px;
+    padding: 38px 25px 20px;
+}
+.box4 ul li {
+    display: inline-block;
+    position: absolute;
+    width: 283px;
+    height: 69px;
+    background-color: #f3f3f3;
+    text-align: center;
+    line-height: 26px;
+    font-size: 16px;
+    text-align: -webkit-match-parent;
+    padding-top: 19px;
+    padding-left: 10px;
+}
+.box4 ul .myli1 {
+    top: 60px;
+    left: 0px;
+}
+.box4 ul .myli2 {
+    top: 153px;
+    left: 0px;
+}
+.box4 ul .myli3 {
+    top: 246px;
+    left: 0px;
+}
+.box4 ul .myli4 {
+    top: 339px;
+    left: 0px;
+}
+.box4 ul .myli5 {
+    top: 60px;
+    right: 0px;
+}
+.box4 ul .myli6 {
+    top: 153px;
+    right: 0px;
+}
+.box4 ul .myli7 {
+    top: 246px;
+    right: 0px;
+}
+.box4 ul .myli8 {
+    top: 339px;
+    right: 0px;
+}
+.box4 .hdcon {
+    width: 551px;
+    height: 353px;
+    left: 325px;
+    top: 60px;
+    position: absolute;
+}
+
+
+/*第五模块*/
+.box5 {
+    height: 510px;
+    width: 1200px;
+    padding-top: 58px;
+}
+.box5 .box_hd {
+    width: 100%;
+    text-align: center;
+}
+.box5 .box_hd h2 {
+    font-size: 30px;
+    color: #333;
+    padding-bottom: 10px;
+}
+.box5 .box_hd p {
+    font-size: 18px;
+    color: #848484;
+    line-height: 30px;
+}
+.salary_con {
+    width: 1202px;
+    height: 367px;
+    border: 1px #a0a0a0 solid;
+    margin-top: 38px;
+    background: #fff;
+    overflow: hidden;
+}
+.salary_con ul li {
+    width: 239px;
+    height: 184px;
+    border-right: 1px #a0a0a0 dashed;
+    border-bottom: 1px #a0a0a0 dashed;
+    float: left;
+    text-align: center;
+}
+ .salarydown img {
+    display: block;
+    margin: 14px auto 0;
+    cursor: pointer;
+}
+ .salary_con ul li .salarydiv {
+    display: block;
+    height: 38px;
+    padding: 16px 0;
+}
+ .salary_con ul li .salaryp {
+    display: block;
+    font-size: 16px;
+    color: #565656;
+    text-align: center;
+     line-height: 16px;
+}
+.salary_con ul li .salaryh2 {
+    display: block;
+    text-align: center;
+    margin-top: 16px;
+    font-weight: bold;
+}
+.box5 .salary_con {
+    width: 1198px;
+    height: 367px;
+    border: 1px #a0a0a0 solid;
+    margin-top: 38px;
+    background: #fff;
+    overflow: hidden;
+}
+.box5 .salary_con ul {
+    width: 1202px;
+}
